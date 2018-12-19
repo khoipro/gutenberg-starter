@@ -1,0 +1,100 @@
+html {
+  font-size: $font__size_base;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: $font__body;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $font__color_base;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+  font-family: $font__body;
+  color: $font__color_base;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@include non-latin-fonts();
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  margin: 0;
+  font-family: $font__heading;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  hyphens: auto;
+  word-break: break-word;
+
+  cite {
+	font-style: normal;
+	font-family: $font__heading;
+  }
+}
+
+code,
+kbd,
+tt,
+var {
+  font-family: $font__code;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s ease;
+  color: $color__link;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+  color: $color__link-hover;
+}
+
+a:focus {
+  outline: thin;
+  outline-style: dotted;
+  text-decoration: underline;
+}
